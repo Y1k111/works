@@ -5,27 +5,27 @@ import { Mail, ExternalLink, ArrowRight, Film, Wand2, Palette, PlayCircle } from
 const PROJECTS = [
   {
     id: 1,
-    title: '校园微电影《微光》',
-    description: '担任主剪辑，负责全片的素材梳理与粗剪、精剪。通过调整节奏和配乐，强化了影片的青春氛围。',
+    title: '校园微电影《重生》',
+    description: '担任主剪辑，负责全片的素材梳理与粗剪、精剪。通过调整节奏和配乐，强化了影片的情绪表达与氛围感。',
     tags: ['Premiere Pro', '剧情片', '校园项目'],
     image: 'https://picsum.photos/seed/shortfilm/800/600',
-    link: '#'
+    link: ' https://b23.tv/SCoFNpI'
   },
   {
     id: 2,
-    title: '个人旅行 Vlog',
-    description: '记录大三暑假旅行的短视频。运用了卡点剪辑和轻快的转场，在小红书上获得了不错的播放量。',
-    tags: ['Final Cut Pro', 'Vlog', '生活记录'],
-    image: 'https://picsum.photos/seed/vlog/800/600',
-    link: '#'
+    title: '三九胃泰养胃舒广告',
+    description: '为全国大学生广告艺术大赛（大广赛）制作的参赛视频。从品牌调性出发，通过温馨的画面和流畅的剪辑传递产品理念。',
+    tags: ['Premiere Pro', '广告片', '比赛项目'],
+    image: 'https://picsum.photos/seed/commercial/800/600',
+    link: 'https://b23.tv/kyF6UXF'
   },
   {
     id: 3,
-    title: '社团活动回顾视频',
-    description: '为学校摄影社团制作的年度活动回顾。从大量混杂素材中提取精彩瞬间，配合动感音乐完成剪辑。',
-    tags: ['CapCut', '活动混剪', '节奏感'],
-    image: 'https://picsum.photos/seed/event/800/600',
-    link: '#'
+    title: '纪录片《石家大院》',
+    description: '参与拍摄与后期剪辑的文化纪录片。通过平稳的镜头语言和细腻的空镜剪辑，展现了传统建筑的历史底蕴与人文气息。',
+    tags: ['Premiere Pro', '纪录片', '传统文化'],
+    image: 'https://picsum.photos/seed/documentary/800/600',
+    link: 'https://b23.tv/cehvVOS'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const PROJECTS = [
     description: '出于个人爱好制作的电影混剪。重点练习了情绪铺垫、台词与音乐的配合，以及整体节奏的把控。',
     tags: ['Premiere Pro', 'After Effects', '混剪'],
     image: 'https://picsum.photos/seed/fanedit/800/600',
-    link: '#'
+    link: 'https://b23.tv/yoqZEwQ'
   }
 ];
 
@@ -185,7 +185,7 @@ export default function App() {
                 transition={{ duration: 0.6, delay: index % 2 === 0 ? 0 : 0.2 }}
                 className="group cursor-pointer"
               >
-                <div className="relative overflow-hidden rounded-3xl mb-6 bg-neutral-100 aspect-[16/9]">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="block relative overflow-hidden rounded-3xl mb-6 bg-neutral-100 aspect-[16/9]">
                   <img 
                     src={project.image} 
                     alt={project.title}
@@ -196,7 +196,7 @@ export default function App() {
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 shadow-xl">
                     <PlayCircle className="w-8 h-8 text-neutral-900 ml-1" />
                   </div>
-                </div>
+                </a>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map(tag => (
                     <span key={tag} className="px-3 py-1 text-xs font-medium bg-neutral-100 text-neutral-600 rounded-full">
@@ -204,7 +204,9 @@ export default function App() {
                     </span>
                   ))}
                 </div>
-                <h3 className="text-2xl font-semibold mb-3 group-hover:text-neutral-600 transition-colors">{project.title}</h3>
+                <h3 className="text-2xl font-semibold mb-3 group-hover:text-neutral-600 transition-colors">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                </h3>
                 <p className="text-neutral-600 leading-relaxed">{project.description}</p>
               </motion.div>
             ))}
