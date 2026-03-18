@@ -137,7 +137,7 @@ export default function App() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <div className="flex items-center gap-4 text-neutral-500">
-                <a href="#" className="flex items-center gap-2 hover:text-[#ff2442] transition-colors p-2 font-medium">
+                <a href="https://xhslink.com/m/3hK9RiG6avK" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#ff2442] transition-colors p-2 font-medium">
                   <XiaohongshuIcon className="w-5 h-5" />
                   <span className="text-sm">小红书主页</span>
                 </a>
@@ -269,15 +269,23 @@ export default function App() {
               目前我正在积极寻找视频剪辑、后期制作相关的实习机会。如果您觉得我的作品还不错，或者有任何建议，都非常欢迎通过邮件或小红书与我联系！
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="relative group w-full sm:w-auto">
+                <a 
+                  href="mailto:2235648139@qq.com"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-800 transition-all hover:scale-105 active:scale-95 w-full"
+                >
+                  <Mail className="w-5 h-5" />
+                  发送邮件
+                </a>
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-neutral-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-lg z-10">
+                  2235648139@qq.com
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-neutral-800 rotate-45"></div>
+                </div>
+              </div>
               <a 
-                href="mailto:hello@example.com"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-800 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
-              >
-                <Mail className="w-5 h-5" />
-                发送邮件
-              </a>
-              <a 
-                href="#"
+                href="https://xhslink.com/m/3hK9RiG6avK"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#ff2442] text-white rounded-full font-medium hover:bg-[#e61e38] transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
               >
                 <XiaohongshuIcon className="w-5 h-5" />
