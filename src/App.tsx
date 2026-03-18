@@ -5,42 +5,42 @@ import { Mail, ExternalLink, ArrowRight, Film, Wand2, Palette, PlayCircle } from
 const PROJECTS = [
   {
     id: 1,
-    title: '品牌商业宣传片',
-    description: '为知名运动品牌打造的年度视觉大片，结合动感剪辑与高级电影感调色，全网播放量破百万。',
-    tags: ['Premiere Pro', 'DaVinci Resolve', '商业广告'],
-    image: 'https://picsum.photos/seed/commercial/800/600',
-    link: '#'
-  },
-  {
-    id: 2,
-    title: '独立剧情短片《微光》',
-    description: '担任全片主剪辑与声音设计，通过细腻的镜头语言和节奏把控，入围多个独立电影节。',
-    tags: ['Final Cut Pro', 'Audition', '剧情片'],
+    title: '校园微电影《微光》',
+    description: '担任主剪辑，负责全片的素材梳理与粗剪、精剪。通过调整节奏和配乐，强化了影片的青春氛围。',
+    tags: ['Premiere Pro', '剧情片', '校园项目'],
     image: 'https://picsum.photos/seed/shortfilm/800/600',
     link: '#'
   },
   {
-    id: 3,
-    title: '生活方式 Vlog 系列',
-    description: '爆款社交媒体短视频系列，网感极佳的卡点剪辑与轻快节奏，单支视频平均点赞超10万。',
-    tags: ['CapCut', 'After Effects', '短视频'],
+    id: 2,
+    title: '个人旅行 Vlog',
+    description: '记录大三暑假旅行的短视频。运用了卡点剪辑和轻快的转场，在小红书上获得了不错的播放量。',
+    tags: ['Final Cut Pro', 'Vlog', '生活记录'],
     image: 'https://picsum.photos/seed/vlog/800/600',
     link: '#'
   },
   {
+    id: 3,
+    title: '社团活动回顾视频',
+    description: '为学校摄影社团制作的年度活动回顾。从大量混杂素材中提取精彩瞬间，配合动感音乐完成剪辑。',
+    tags: ['CapCut', '活动混剪', '节奏感'],
+    image: 'https://picsum.photos/seed/event/800/600',
+    link: '#'
+  },
+  {
     id: 4,
-    title: '独立乐队 MV',
-    description: '运用大量视觉特效与创意转场，将音乐的情绪视觉化，打造极具冲击力的视听体验。',
-    tags: ['Premiere Pro', 'After Effects', 'MV'],
-    image: 'https://picsum.photos/seed/musicvideo/800/600',
+    title: '经典影视混剪练习',
+    description: '出于个人爱好制作的电影混剪。重点练习了情绪铺垫、台词与音乐的配合，以及整体节奏的把控。',
+    tags: ['Premiere Pro', 'After Effects', '混剪'],
+    image: 'https://picsum.photos/seed/fanedit/800/600',
     link: '#'
   }
 ];
 
 const SKILLS = [
-  { name: '剪辑与叙事', icon: <Film className="w-6 h-6 mb-4 text-neutral-600" />, description: '熟练掌握多机位剪辑、节奏把控与视觉叙事，善于从海量素材中提炼核心故事，让画面自己发声。' },
-  { name: '色彩调配', icon: <Palette className="w-6 h-6 mb-4 text-neutral-600" />, description: '精通达芬奇 (DaVinci Resolve) 节点式调色，能够根据不同项目需求打造独特的视觉质感与电影级色调。' },
-  { name: '特效与包装', icon: <Wand2 className="w-6 h-6 mb-4 text-neutral-600" />, description: '熟练运用 After Effects 进行二维/三维视觉包装、绿幕抠像、动态追踪及创意图形设计。' }
+  { name: '基础剪辑与网感', icon: <Film className="w-6 h-6 mb-4 text-neutral-600" />, description: '熟练使用 Premiere Pro 和 Final Cut Pro 进行剪辑。经常刷短视频，对视频节奏有较好的网感，能独立完成粗剪与精剪。' },
+  { name: '基础调色', icon: <Palette className="w-6 h-6 mb-4 text-neutral-600" />, description: '了解基础的色彩理论，能够使用 DaVinci Resolve 或 Lumetri Color 进行基础的画面调色与风格化处理。' },
+  { name: '简单包装与特效', icon: <Wand2 className="w-6 h-6 mb-4 text-neutral-600" />, description: '熟悉 After Effects 的基本操作，能够制作简单的片头片尾、文字动画、转场特效以及基础的画面包装。' }
 ];
 
 // 小红书自定义 SVG 图标
@@ -106,7 +106,7 @@ export default function App() {
             onClick={() => scrollTo('contact')}
             className="px-5 py-2.5 bg-neutral-900 text-white text-sm font-medium rounded-full hover:bg-neutral-800 transition-colors"
           >
-            合作邀约
+            联系我
           </button>
         </div>
       </nav>
@@ -120,13 +120,13 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h2 className="text-neutral-500 font-medium tracking-wide uppercase text-sm mb-6">Video Editor / Visual Creator</h2>
+            <h2 className="text-neutral-500 font-medium tracking-wide uppercase text-sm mb-6">大四学生 / 寻找视频剪辑实习</h2>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] tracking-tight mb-8 text-neutral-900">
               用镜头语言 <br className="hidden md:block" />
               讲述<span className="text-neutral-400 italic">动人</span>的故事。
             </h1>
             <p className="text-lg md:text-xl text-neutral-600 leading-relaxed max-w-2xl mb-12">
-              我是一名专注于视觉表达的视频剪辑师。擅长商业宣传片、短视频及剧情向混剪，致力于将创意转化为引人入胜的视觉体验。
+              你好！我是一名即将毕业的大四学生，热爱视频剪辑与视觉表达。这是我的个人作品集，目前正在寻找视频剪辑相关的实习机会，希望能将我的创意与热情投入到实际项目中。
             </p>
             <div className="flex items-center gap-6">
               <button 
@@ -223,13 +223,13 @@ export default function App() {
               <h2 className="font-serif text-4xl md:text-5xl font-medium mb-8">关于我</h2>
               <div className="space-y-6 text-neutral-400 text-lg leading-relaxed">
                 <p>
-                  你好！我是一名充满热情的视频剪辑师与视觉创作者。我对影像的专注始于大学时期，从最初的兴趣记录，到如今能够独立把控商业项目的后期全流程。
+                  你好！我是一名大四在读学生，对视频制作充满热情。我对影像的兴趣始于大学时期，从最初用手机记录生活，到后来开始自学专业的剪辑软件。
                 </p>
                 <p>
-                  我曾在影视制作公司和 MCN 机构担任核心剪辑师，参与过品牌广告、微电影以及千万级播放量的爆款短视频制作。我坚信，好的剪辑是隐形的，它能精准地引导观众的情绪，让故事更加深入人心。
+                  在校期间，我参与了多个校园微电影和社团宣传片的剪辑工作，也经常在个人社交媒体上分享自己的生活 Vlog 和混剪练习。虽然我还在不断学习和积累经验的阶段，但我具备快速学习新技能的能力，并且做事认真负责。
                 </p>
                 <p>
-                  在工作之外，我喜欢摄影、看电影，以及在小红书上分享我的剪辑心得、调色预设与生活日常。
+                  我非常渴望能获得一份实习工作，在专业的团队中锻炼自己。工作之外，我喜欢摄影、看电影，以及在小红书上分享我的生活日常。
                 </p>
               </div>
             </motion.div>
@@ -261,10 +261,10 @@ export default function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-neutral-500 font-medium tracking-wide uppercase text-sm mb-4">期待合作</h2>
+            <h2 className="text-neutral-500 font-medium tracking-wide uppercase text-sm mb-4">寻找实习机会</h2>
             <h3 className="font-serif text-5xl md:text-7xl font-medium mb-8">联系我</h3>
             <p className="text-xl text-neutral-600 leading-relaxed mb-12 max-w-2xl mx-auto">
-              无论是商业项目合作、短视频代剪，还是有趣的创意探讨，我的收件箱随时为您敞开。欢迎通过邮件或小红书与我取得联系！
+              目前我正在积极寻找视频剪辑、后期制作相关的实习机会。如果您觉得我的作品还不错，或者有任何建议，都非常欢迎通过邮件或小红书与我联系！
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
